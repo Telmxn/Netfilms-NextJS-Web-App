@@ -2,7 +2,13 @@ import HomeContainer from "@/containers/home";
 
 import Movies from "@/mocks/movies.json";
 
-export default function Home({ params }) {
+// async function delay(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+export default async function Home({ params }) {
+  // await delay(2000);
+
   let selectedCagetory;
 
   if (params.category?.length > 0) {
